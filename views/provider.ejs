@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <h2>Mirabelle</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/product">Produits <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/provider">Fournisseurs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nous contacter</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="vertical-center">
+        <section class="add-product container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="add-tab" data-toggle="tab" href="#add" role="tab"
+                                        aria-controls="add" aria-selected="true">Ajouter</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="add" role="tabpanel"
+                                    aria-labelledby="add-tab">
+                                    <h1>Ajouter</h1>
+                                    <hr class="ym-4" />
+                                    <form method="post" action="/provider">
+                                        <div class="form-group">
+                                            <label for="title">Nom</label>
+                                            <input type="text" class="form-control" id="name" name="name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="desc">Description</label>
+                                            <textarea rows="10" class="form-control" id="desc" name="desc"
+                                                required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Valider</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

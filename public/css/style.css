@@ -1,0 +1,126 @@
+@font-face{
+    font-family: 'milkshake';
+    src: url('../font/Milkshake/Milkshake.ttf') format('truetype');
+}
+
+body{
+    background-color: whitesmoke !important;
+    background-image: url('../img/login-flower.jpg');
+    background-size: cover;
+    font-family: 'milkshake' !important;
+    color: white !important;
+    background-repeat: no-repeat;
+}
+
+label, button, a{
+    font-size: large;
+    color: white !important;
+}
+
+h2{
+    color: white !important;
+}
+
+label, p{
+    color: black;
+}
+
+button, .card-header{
+    background-color: #85c226 !important;
+}
+
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    background-color: #85c226 !important;
+}
+
+a.nav-link{
+    color: black !important;
+}
+
+.form-group label, .tab-pane h1{
+    color: black !important;
+}
+
+.triangle {
+    line-height: 40px;
+    width: 200px;
+    height: 40px;
+    position: relative;
+    background: #85c226;
+}
+
+.triangle:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.triangle:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #85c226;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+
+.triangle2 {
+    line-height: 40px;
+    width: 200px;
+    height: 40px;
+    position: relative;
+    background: #3f4447;
+}
+
+.triangle2:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.triangle2:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #3f4447;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+
+.img-thumbnail{
+    width: 250px;
+    height: 250px;
+    float: left;
+}
+
+.provider-info{
+    float: right;
+    font-size: 1.4em;
+}
+  
+
